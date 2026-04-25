@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — n8n_bot</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1814;
+    --muted: #6b6760;
+    --rule: #e8e4de;
+    --bg: #faf8f5;
+    --accent: #c8401a;
+    --card: #ffffff;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  header {
+    border-bottom: 1px solid var(--rule);
+    padding: 2.5rem 0 2rem;
+    background: var(--card);
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 2rem; }
+  .label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--ink);
+  }
+  .meta {
+    margin-top: 1rem;
+    font-size: 13px;
+    color: var(--muted);
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  main { padding: 3rem 0 5rem; }
+  .intro {
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  section { margin-bottom: 2.5rem; }
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1.2em;
+    background: var(--accent);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  p { color: #3d3a35; margin-bottom: 0.75rem; font-size: 0.95rem; }
+  ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+  li { color: #3d3a35; font-size: 0.95rem; margin-bottom: 0.35rem; }
+
+  .highlight {
+    background: #fff8f6;
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.25rem;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .highlight p { margin: 0; font-size: 0.9rem; color: var(--muted); }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 1.5rem 0;
+    background: var(--card);
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="label">Legal Document</p>
+    <h1>Terms of Service</h1>
+    <div class="meta">
+      <span>App: n8n_bot</span>
+      <span>Effective: April 25, 2025</span>
+      <span>Version 1.0</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="intro">These Terms of Service govern your use of n8n_bot, an automated content publishing tool that connects Google Sheets, Telegram, and the TikTok API. By using this application, you agree to these terms.</p>
+
+    <section>
+      <h2>Acceptance of Terms</h2>
+      <p>By accessing or using n8n_bot, you confirm that you are at least 18 years old, have read and understood these Terms, and agree to be bound by them. If you do not agree, do not use the application.</p>
+    </section>
+
+    <section>
+      <h2>Description of Service</h2>
+      <p>n8n_bot is a personal automation tool that enables users to:</p>
+      <ul>
+        <li>Prepare TikTok post content (title, description, hashtags) in a Google Sheet</li>
+        <li>Trigger content publishing via a Telegram bot command</li>
+        <li>Automatically upload and publish videos to TikTok via the TikTok Content Posting API</li>
+      </ul>
+      <p>The service is provided for personal and internal business use only.</p>
+    </section>
+
+    <section>
+      <h2>User Responsibilities</h2>
+      <p>You are solely responsible for all content published through this application. You agree to:</p>
+      <ul>
+        <li>Comply with <a href="https://www.tiktok.com/community-guidelines" target="_blank">TikTok's Community Guidelines</a> and Terms of Service</li>
+        <li>Not publish content that is illegal, harmful, defamatory, or infringing</li>
+        <li>Maintain the security of your TikTok OAuth credentials</li>
+        <li>Not use the application to spam, harass, or distribute malicious content</li>
+        <li>Ensure you own or have rights to all video content you publish</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>TikTok API Usage</h2>
+      <div class="highlight">
+        <p>This application uses the TikTok Content Posting API. Use of this application is subject to TikTok's API Terms of Service in addition to these Terms.</p>
+      </div>
+      <p>We are not affiliated with, endorsed by, or sponsored by TikTok or its parent company ByteDance. TikTok is a trademark of ByteDance Ltd.</p>
+    </section>
+
+    <section>
+      <h2>Intellectual Property</h2>
+      <p>You retain all ownership rights to the content you create and publish. By using this application, you grant us no rights to your content beyond what is necessary to operate the service (i.e., passing it to the TikTok API on your behalf).</p>
+    </section>
+
+    <section>
+      <h2>Disclaimer of Warranties</h2>
+      <p>The service is provided "as is" without warranties of any kind. We do not guarantee that:</p>
+      <ul>
+        <li>The service will be uninterrupted or error-free</li>
+        <li>TikTok API will remain available or maintain current functionality</li>
+        <li>Published content will appear on TikTok within any specific timeframe</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the service, including but not limited to loss of data, loss of revenue, or TikTok account suspension.</p>
+    </section>
+
+    <section>
+      <h2>Termination</h2>
+      <p>You may stop using the service at any time. You can revoke TikTok API access through your TikTok account settings at any time. We reserve the right to suspend access if these Terms are violated.</p>
+    </section>
+
+    <section>
+      <h2>Changes to Terms</h2>
+      <p>We may modify these Terms at any time. Continued use of the service after changes constitutes acceptance of the new Terms. The effective date at the top of this page will reflect the most recent update.</p>
+    </section>
+
+    <section>
+      <h2>Governing Law</h2>
+      <p>These Terms are governed by applicable local law. Any disputes shall be resolved through good faith negotiation before pursuing formal legal remedies.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>For questions regarding these Terms of Service, please contact us at the email address associated with your TikTok Developer account.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <span>© 2025 n8n_bot. All rights reserved.</span>
+      <a href="privacy-policy.html">Privacy Policy →</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
