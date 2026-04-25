@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — n8n_bot</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1814;
+    --muted: #6b6760;
+    --rule: #e8e4de;
+    --bg: #faf8f5;
+    --accent: #c8401a;
+    --card: #ffffff;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  /* Header */
+  header {
+    border-bottom: 1px solid var(--rule);
+    padding: 2.5rem 0 2rem;
+    background: var(--card);
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 2rem; }
+  .label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--ink);
+  }
+  .meta {
+    margin-top: 1rem;
+    font-size: 13px;
+    color: var(--muted);
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  /* Content */
+  main { padding: 3rem 0 5rem; }
+  .intro {
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  section { margin-bottom: 2.5rem; }
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1.2em;
+    background: var(--accent);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  p { color: #3d3a35; margin-bottom: 0.75rem; font-size: 0.95rem; }
+  ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+  li { color: #3d3a35; font-size: 0.95rem; margin-bottom: 0.35rem; }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 1.5rem 0;
+    background: var(--card);
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="label">Legal Document</p>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <span>App: n8n_bot</span>
+      <span>Effective: April 25, 2025</span>
+      <span>Version 1.0</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="intro">This Privacy Policy describes how n8n_bot ("we", "us", or "our") handles information when you use our application to manage and publish content to TikTok through an automated workflow.</p>
+
+    <section>
+      <h2>Information We Collect</h2>
+      <p>We collect only the minimum information necessary to operate the service:</p>
+      <ul>
+        <li>TikTok account access tokens (OAuth 2.0), stored securely server-side</li>
+        <li>Content data you provide: video titles, descriptions, hashtags, and scheduled post times</li>
+        <li>Basic TikTok profile information (display name, account ID) required by the TikTok API</li>
+      </ul>
+      <p>We do not collect passwords, payment information, or any personal data beyond what is listed above.</p>
+    </section>
+
+    <section>
+      <h2>How We Use Your Information</h2>
+      <p>Information collected is used solely to:</p>
+      <ul>
+        <li>Authenticate your TikTok account via OAuth 2.0</li>
+        <li>Publish video content to TikTok on your behalf</li>
+        <li>Maintain session continuity through token refresh</li>
+      </ul>
+      <p>We do not sell, trade, or share your information with third parties for marketing purposes.</p>
+    </section>
+
+    <section>
+      <h2>Data Storage & Security</h2>
+      <p>Access tokens and credentials are stored server-side using industry-standard encryption. We follow TikTok's token security recommendations and never expose credentials in client-side code or logs.</p>
+      <p>Data is retained only for as long as necessary to provide the service. You may request deletion at any time.</p>
+    </section>
+
+    <section>
+      <h2>Third-Party Services</h2>
+      <p>This application integrates with the following third-party services:</p>
+      <ul>
+        <li><strong>TikTok API</strong> — subject to <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank">TikTok's Privacy Policy</a></li>
+        <li><strong>Google Sheets API</strong> — subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a></li>
+        <li><strong>Telegram Bot API</strong> — subject to <a href="https://telegram.org/privacy" target="_blank">Telegram's Privacy Policy</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access the data we hold about you</li>
+        <li>Request correction or deletion of your data</li>
+        <li>Revoke TikTok OAuth access at any time via TikTok's app settings</li>
+        <li>Withdraw consent for data processing</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>This application is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Changes will be reflected by updating the effective date at the top of this page.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>If you have questions about this Privacy Policy, please contact us at the email address associated with your TikTok Developer account.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <span>© 2025 n8n_bot. All rights reserved.</span>
+      <a href="terms-of-service.html">Terms of Service →</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
