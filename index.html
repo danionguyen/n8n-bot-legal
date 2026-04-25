@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>n8n_bot — TikTok Content Automation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1814;
+    --muted: #6b6760;
+    --rule: #e8e4de;
+    --bg: #faf8f5;
+    --accent: #c8401a;
+    --card: #ffffff;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Nav */
+  nav {
+    background: var(--card);
+    border-bottom: 1px solid var(--rule);
+    padding: 1.25rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a {
+    font-size: 13px;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+
+  /* Hero */
+  .hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  .hero-inner { max-width: 600px; }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid #f0c4b8;
+    background: #fff8f6;
+    padding: 0.3rem 0.85rem;
+    border-radius: 20px;
+    margin-bottom: 1.75rem;
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 1.25rem;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .subtitle {
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Feature pills */
+  .pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-bottom: 3rem;
+  }
+  .pill {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--muted);
+    background: var(--card);
+    border: 1px solid var(--rule);
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+  }
+
+  /* Flow diagram */
+  .flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+  .flow-step {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 0.75rem 1.25rem;
+    font-size: 13px;
+    color: var(--ink);
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .flow-step.accent {
+    border-color: #f0c4b8;
+    background: #fff8f6;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .arrow {
+    font-size: 14px;
+    color: var(--rule);
+    padding: 0 0.5rem;
+  }
+
+  /* Legal links */
+  .legal {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .legal a {
+    font-size: 13px;
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .legal a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* Footer */
+  footer {
+    background: var(--card);
+    border-top: 1px solid var(--rule);
+    padding: 1.25rem 2rem;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="#">n8n<span>_bot</span></a>
+  <div class="nav-links">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="badge">TikTok Content Automation</span>
+    <h1>Publish TikTok videos<br>with <em>zero friction</em></h1>
+    <p class="subtitle">n8n_bot connects Google Sheets, Telegram, and the TikTok API into a single automated publishing workflow.</p>
+
+    <div class="flow">
+      <div class="flow-step">Google Sheets</div>
+      <span class="arrow">→</span>
+      <div class="flow-step">Telegram</div>
+      <span class="arrow">→</span>
+      <div class="flow-step accent">n8n_bot</div>
+      <span class="arrow">→</span>
+      <div class="flow-step">TikTok</div>
+    </div>
+
+    <div class="pills">
+      <span class="pill">Content Posting API</span>
+      <span class="pill">OAuth 2.0</span>
+      <span class="pill">Scheduled Publishing</span>
+      <span class="pill">Automated Workflow</span>
+      <span class="pill">Personal Use</span>
+    </div>
+
+    <div class="legal">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2025 n8n_bot. Built for personal content automation. Not affiliated with TikTok or ByteDance.
+</footer>
+
+</body>
+</html>
